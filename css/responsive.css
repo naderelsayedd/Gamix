@@ -1,0 +1,152 @@
+@media screen and (max-width : 768px) {
+    .nav-item{
+        transition: all .5s;
+        margin: 20px;
+    }
+
+    .contact .form-data
+    {
+        width: 100%;
+    }
+
+    header ul 
+    {
+        margin-left: auto!important;
+    background: #787878a8;
+    border-radius: 10px;
+    }
+    .nav-item:hover
+    {
+        transform: translate(10px);
+    }
+
+    .slider .slider-row h3 ,.players .playerHeader , .product .productHead
+    {
+        font-size: 70px;
+        margin-top: 20px;
+    }
+
+    .match-result h3{
+        font-size: 30px;
+    }
+
+    .players .addition h3
+    {
+        text-align: left;
+    }
+
+    .community h3
+    {
+        font-size: 25px;
+    }
+    .community p {font-size: 17px;}
+
+    .about-child 
+    {
+        margin: 50px 0;
+    }
+
+    .owl-carousel .item{
+        width: 95%;
+        margin: auto;
+    }
+
+    .about .about-child , .community .join
+    {
+        margin: 50px 0;
+        padding-left: 20px;
+    }
+}
+
+
+
+
+
+@media screen and (max-width : 540px) {
+    .nav-item{
+        transition: all .5s;
+        margin: 20px;
+    }
+
+    header ul 
+    {
+        margin-left: auto!important;
+    background: #787878a8;
+    border-radius: 10px;
+    }
+    .nav-item:hover
+    {
+        transform: translate(10px);
+    }
+
+    .slider .slider-row h3 ,.players .playerHeader , .product .productHead
+    {
+        font-size: 50px;
+        margin-top: 20px;
+    }
+
+    .match-result h3{
+        font-size: 30px;
+        margin: 50px 0;
+    }
+
+    .players .addition h3
+    {
+        text-align: left;
+    }
+
+    .community h3
+    {
+        font-size: 25px;
+    }
+    .community p {font-size: 17px;}
+
+    .about .about-child , .community .join
+    {
+        margin: 50px 0;
+        padding-left: 15px;
+    }
+
+    .about .about-child h3
+    {
+    letter-spacing: 1px;
+    line-height: 50px;
+    word-spacing: 2px;
+    font-size: 25px;
+    }
+
+    .about-child p 
+    {
+        font-size: 15px;
+        line-height: 30px;
+    }
+
+    .counters .row div 
+    {
+        margin: 10px 0;
+    }
+
+    .right-side 
+    {
+        text-align: center;
+        margin: 30px 0;
+    }
+
+    .owl-carousel .item{
+        width: 100%;
+        margin: auto;
+    }
+
+}
+
+@media screen and(max-width : 400px) {
+   
+    /* .contact .form-data {
+        width: 101%;
+        margin: auto;
+        height: 100%;
+        padding: 70px 0;
+        position: relative;
+        background-color: #121212;
+    } */
+}

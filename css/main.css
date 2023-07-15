@@ -1,0 +1,839 @@
+@font-face {
+    font-family: 'Barlow Bold';
+    src: url(..//fonts/Barlow_Condensed/BarlowCondensed-Bold.ttf);
+}
+
+@font-face {
+    font-family: "Barlow Regular";
+    src: url(..//fonts/Barlow_Condensed/BarlowCondensed-Regular.ttf);
+}
+.clr {clear: both;}
+hr {color: #ffffff5d;}
+#btnTop 
+{
+    position: fixed ;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    border: none;
+    background-color: #24242F;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
+img {width: 100%;}
+a
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+li 
+{
+    list-style :none
+}
+.p-70
+{
+    padding: 70px 0 ;
+}
+
+header {
+    position: absolute;
+    right: 0;
+    left: 0;
+    z-index: 10000000;
+}
+.active {
+    color: #fff;
+}
+.nav-link , .navbar-brand 
+{
+    color: #fff;
+    transition: all .5s;
+}
+.nav-link:hover:hover
+{
+    color: #fff;
+}
+.navbar-brand span 
+{
+    color: #E50914;
+}
+/* slider */
+.slider
+{
+    position: relative;
+    background-color: #191919;
+}
+
+.slider .slider-row
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.follow
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: rotate(90deg);
+    position:absolute;
+    left: -100px;
+    top: 250px;
+}
+.follow .follow-text{margin: 10px ;color: #fff;font-family: "Barloq Regular";}
+.follow a {color: #fff;margin:0 10px ;}
+
+.follow a i {transition: all .5s;font-size: 18px;}
+.follow a i:hover{
+    transform: rotate(-90deg);
+}
+
+.slider .slider-row h3
+{
+    font-family: "Barlow Bold";
+    font-size: 100px;
+    -webkit-text-stroke-color: #e50914;
+    -webkit-text-fill-color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 0 #e50914;
+}
+.mybtn {
+    background-color: #E50914;
+    border :none ;
+    border-radius: 20px;
+    color: #fff;
+    padding: 10px;
+    transition: all 1s;
+    font-size: 18px;
+    font-family: "Barlow Bold";
+}
+
+.slider .slider-row p 
+{
+    font-family: br;
+    font-size: 19px;
+    color: #787878;
+    padding: 18px 40px 48px 0;
+    font-family: br;
+    font-size: 19px;
+    color: #787878;
+    padding: 18px 40px 48px 0;
+}
+
+/* collection  */
+
+.collection {
+    background-color: #141414;
+}
+
+.collection .item-text
+{
+    text-align: center;
+    padding: 20px 0;
+}
+
+.collection span {color: #E50914;letter-spacing: 2px;font-family:"Barlow Bold" ;}
+.collection h3 {color: #fff;font-family: "Barlow Bold";font-size: 35px;margin: 20px 0;}
+
+.collection p {color: #787878; font-family: "Barlow Regular";font-size: 20px;line-height: 1.7em;letter-spacing: 2px;margin: 20px 0;}
+.collection .mybtn {margin: 20px 0;}
+.collection .item-text i 
+{
+    color: #FBAA33;
+    margin: 10px 0;
+}
+.collection .item-text a{
+    font-size: 20px;
+}
+
+.collection .item-img {position: relative;transition: all 1s;}
+.collection .item-img .overlay 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #e50914a2;
+    transition: all 1s;
+    z-index: 10000;
+    transition: all 1s;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    opacity: 0;
+}
+.collection .item-img:hover .overlay 
+{
+    opacity: 1;
+}
+.collection .overlay i {color: #fff;}
+
+.owl-dots{display: none;}
+
+
+
+
+/* start about */
+.about {
+    background-color: #141414;
+}
+
+.about .row {margin-top: 30px;}
+.about .heading
+{
+    font-family: "Barlow Bold";
+    font-size: 100px;
+    -webkit-text-stroke-color: #e50914;
+    -webkit-text-fill-color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 0 #e50914;
+}
+
+.about .img {position: relative;}
+.about .img-count{
+    background-color: #E50914;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    right: 0;
+    bottom: 0;
+   text-align: center;
+}
+
+.about .img-count h3 {
+    font-size: 80px;
+    font-family: "Barlow Bold";
+    color: white;
+    display: block;
+}
+.img-count span {
+    display: block;
+    font-family: "Barlow Regular";
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.about .about-child
+{
+    padding-left: 50px;
+}
+.about .about-child span 
+{
+    color: #E50914;
+    font-family:"Barlow regular" ;
+    font-size: 25px;
+}
+
+.about .about-child h3 {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Barlow Bold";
+    letter-spacing: 2px;
+    line-height: 1.9;
+    word-spacing: 5px;
+    font-size: 35px;
+}
+
+.about .about-child p 
+{
+    color: #787878;
+    font-size: 19px;
+    font-family: "Barlow regular";
+    letter-spacing: 1px;
+    line-height: 1.9em;
+    margin: 35px 0;
+}
+/* end about */
+
+/* start counters  */
+.counters {background-color: #141414;}
+.content
+{
+    padding: 20px;
+    background-color: #191919;
+    text-align: center;
+    color: #fff;
+}
+
+.content h3 
+{
+    font-size: 50px;
+    font-family: "Barlow Bold";
+    margin: 30px 0;
+}
+
+.content h3 span {color: #E50914;font-size: 60px;}
+
+.content span {
+    font-family: "Barlow regular";
+    font-size: 18px;
+}
+/* end counters  */
+
+/* start matches */
+.matches
+{
+    background-color: #141414;
+}
+
+.matches .card 
+{
+    background-color: #191919;
+    padding: 20px;
+    color: #fff;
+}
+
+.matches  .item{
+    width: 100%;
+}
+.matches .card .card-img 
+{
+    width: 60px;
+    height: 60px;
+}
+.matches .card h3
+{
+    margin: 45px 0;
+    font-family: "Barlow Regular";
+    font-size: 20px;
+}
+
+.matches .card:hover{
+    background-color: #E50914;
+    cursor: pointer;
+}
+
+.matches .live {color: #E50914;font-family: "Barlow Bold";animation:liveAnimation 1s infinite ;}
+.matches .card:hover .live{color: #fff;}
+
+
+@keyframes liveAnimation{
+    0%{
+        color: #E50914;
+    }
+    50%{
+        color: #fff;
+    }
+    100%{
+        color: #E50914;
+    }
+}
+
+
+.previous {
+    color: #787878;
+    letter-spacing: 5px;
+    font-family: "Barlow Regular";
+    font-size: 30px;
+}
+
+.match-parent .match-content{background-color: #191919;margin: 30px 10px;padding: 35px;}
+.matches .match-result
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.match-result h3 
+{
+    font-family: "Barlow Bold";
+    font-size: 40px;
+    color: #fff;
+    letter-spacing: 5px;
+}
+.poster
+{
+    position: relative;
+}
+
+.poster .play 
+{
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.poster .play button 
+{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: none;
+    font-size: 25px;
+    color: #E50914;
+    transition: all .5s;
+}
+
+.poster .play button:hover{
+    background-color: #E50914;
+    color: #fff;
+}
+.owl-item {
+    margin-right: 0;
+    display: flex;
+    justify-content: center;
+}
+.brands .item 
+{
+    padding: 20px ;
+    width: 200px ;
+    height: 200px;
+    text-align: center;
+}
+/* end matches */
+
+/* start players */
+.players {
+    background-color: #191919;
+}
+.players .playerHeader
+{
+    font-size: 110px;
+    font-family: bb;
+    color: white;
+    -webkit-text-stroke-color: #e50914;
+    -webkit-text-fill-color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 0 #e50914;
+    position: relative;
+    padding-bottom: 8px;
+    margin: 20px 0;
+}
+.players .item-img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: visible;
+}
+.players .overlay 
+{
+    position: absolute;
+    inset: 0;
+    color: transparent;
+    transition: all .5s;
+    display: none;
+}
+.players .item-img:hover .overlay 
+{
+    background-color: rgba(20, 20, 20, 0.8);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 20px;
+}
+
+.players .item{position: relative;}
+.playerName {
+    position: absolute;
+    bottom: 15px;
+    color: #fff;
+    background-color: #E50914;
+    z-index: 6256;
+    right: 0;
+    left: 0;
+    width: 50%;
+    margin: auto;
+    font-family: "Barlow Bold";
+    padding: 10px 0;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.addition {    margin:50px 0;
+}
+
+.players .addition h3
+{
+    color: #fff;
+    text-transform: uppercase;
+    font-family: "Barlow Bold";
+    font-size: 35px;
+    letter-spacing: 2px;
+}
+.players .addition h3 span{color: #E50914;}
+
+.addition h4 {
+    color: #E50914;
+    font-family: "Barlow Bold";
+    font-size: 50px;
+    margin: 20px 0;
+    letter-spacing: 2px;
+}
+.addition .first 
+{
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.addition p {
+    color: #fff;
+    font-family: "Barlow Regular";
+    font-size: 19px;
+}
+/* end players */
+
+/* start product  */
+.product {
+    background-color: #141414;
+}
+
+.product .item 
+{
+    background-color: #191919;
+    padding: 20px 0;
+}
+
+
+.product .productHead
+{
+    font-size: 110px;
+    font-family: bb;
+    color: white;
+    -webkit-text-stroke-color: #e50914;
+    -webkit-text-fill-color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 0 #e50914;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.product .item h3{
+    font-family: "Barlow Bold";
+    color: #fff;
+    font-size: 40px;
+    letter-spacing: 2px;
+}
+
+.product .item h4{
+    font-family: "Barlow Regular";
+    margin: 20px 0;
+}
+
+.product .item a 
+{
+    color: #E50914;
+    font-family: "Barlow Bold";
+    font-size: 20px;
+}
+
+.community 
+{
+    background-color: #191919;
+    border-radius: 10px;
+}
+.community .join 
+{
+    padding: 70px;
+}
+.community span 
+{
+    color: #e50914;
+    font-family: "Barlow Regular";
+    font-size: 20px;
+    letter-spacing: 2px;
+    margin: 20px 0;
+    padding: 20px 0;
+}
+
+.community h3
+{
+    font-size: 38px;
+    font-family: "Barlow Bold";
+    color: #fff;
+    text-transform: uppercase;
+    line-height: 52px;
+    padding: 5px 0 18px;
+}
+
+.community p 
+{
+    font-family: "Barlow Regular";
+    font-size: 19px;
+    color: #787878;
+    padding-bottom: 48px;
+    line-height: 1.9em;
+}
+
+/* end product  */
+
+/* start blog  */
+.blog 
+{
+    background-color: #141414;
+}
+.blog span {
+    color: #787878;
+    margin: 30px 0;
+    font-family: "Barlow Regular";
+}
+.blog h3 
+{
+    font-family: "Barlow Bold";
+    font-size: 100px;
+    -webkit-text-stroke-color: #e50914;
+    -webkit-text-fill-color: #FFF;
+    -webkit-text-stroke-width: 1px;
+    text-shadow: 2px 2px 0 #e50914;
+    margin-bottom: 80px;
+}
+
+.blog .card {
+    background-color: #191919;
+    transition: all 1s;
+    cursor: pointer;
+}
+.blog a 
+{
+    color: #fff;
+    display: block;
+    font-family: "Barlow Regular";
+    font-size: 25px;
+    line-height: 1.9em;
+}
+.blog .card-img 
+{
+    position: relative;}
+.card .card-img .overlay 
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #81818148;
+    transition: all 1s;
+}
+
+.blog .card:hover .overlay 
+{
+    display: none;
+}
+/* end blog  */
+
+/*start subscribe */
+.subscribe 
+{
+    background-image: url(../img/subscribe.jpg);
+    background-size: cover;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subscribe h3 
+{
+    font-size: 38px;
+    font-family: "Barlow Bold";
+    color: white;
+    text-transform: uppercase;
+    line-height: 52px;
+}
+.subscribe .text-center{display: flex; align-items: center;justify-content: center;}
+.subscribe .mybtn {
+    background-color: #fff;
+    color: #000;
+    margin: auto;
+}
+/*end subscribe */
+
+/* start footer */
+.footer
+{
+    background-color: #191919;
+}
+.footer .footer-logo
+{
+    font-family: "Barlow Bold";
+    font-size: 35px;
+    letter-spacing: 3px;
+    margin: 30px 0;
+}
+.footer p{
+    font-family: "Barlow Regular";
+    font-size: 19px;
+    color: #787878;
+    padding-top: 20px;
+    padding-right: 80px;
+    padding-bottom: 20px;
+    line-height: 37px;
+}
+.footer a span {color: #E50914;}
+.footer .social ul  {
+    padding: 0;
+    color: #fff;
+}
+.footer ul li 
+{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    float: left;
+    background-color: #262525;
+    margin: 30px;
+    text-align: center;
+    cursor: pointer;
+    transition: all .5s;
+}
+.footer ul li:hover{
+    background-color: #E50914;
+}
+.footer .right-side h3 
+{
+    font-size: 24px;
+    font-family: "Barlow Bold";
+    color: white;
+    padding-top: 12px;
+    padding-bottom: 8px;
+    letter-spacing: 2px;
+}
+
+.footer .right-side a
+{
+    display: block;
+    font-size: 19px;
+    font-family: "Barlow Regular";
+    color: #787878;
+    margin-top: 15px;
+    transition: all .5s;
+}
+
+.footer .right-side a:hover
+{
+    transform: translate(5px);
+    color: #E50914;
+}
+
+
+/* end footer */
+
+.contact .form-data
+{
+    width: 70%;
+    margin: auto;
+    height: 100%;
+    padding: 70px 0;
+    position: relative;
+    background-color: #121212;
+}
+.contact 
+{
+    position: fixed;
+    z-index: 6286;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    padding-top: 50px;
+    background-color: #19191977;
+}
+.form input , .form textarea {
+    color: #fff;
+    margin: 10px 0;
+}
+.form 
+{
+    width: 90%;
+    margin: auto;
+    position: relative;
+}
+
+.form ::placeholder{
+    color: #fff;
+}
+.form .btn 
+{
+    width: 20%;
+    float: left;
+    margin: 20px 0;
+}
+
+.form input:focus , .form textarea:focus {
+    background-color: transparent;
+}
+
+#hideForm{
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 70px;
+    height: 70px;
+    
+}
+#hideForm button
+{
+    border-radius: 50%;
+    border: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.form input , .form textarea {
+    background-color: transparent;
+}
+
+/* loading  */
+.loading
+{
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    inset: 0;
+    z-index: 100000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #818181;
+}
+.logo 
+{
+    border-radius: 50%;
+    background-color: #09c;
+    width: 100px ;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #E50914;
+    text-align: center;
+    transition: all .5s;
+    border: 1px solid #fff;
+    animation: loading 1s infinite;
+    font-family: "Barlow Bold";
+}
+@keyframes loading{
+    0%{transform: scale(1.2)  }
+    50%{transform: scale(1)}
+    100%{transform: scale(1.2)}
+}
+/* end loading */
+
+#btnTop 
+{
+    position: fixed ;
+    right: 20px;
+    bottom: 20px;
+    display: none;
+    border: none;
+    background-color: #24242F;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    border-radius: 5px;
+}
